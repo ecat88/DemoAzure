@@ -1,0 +1,24 @@
+{
+	"name": "Trigger_ijl",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyLocalDataToAzure001",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2019-12-27T11:36:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

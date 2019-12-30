@@ -1,0 +1,13 @@
+{
+	"name": "AzureDataLakeStore001",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://inotekdemodatalake001.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "3d17d3f3-ceac-4f35-8c6b-586aee9733fc",
+			"subscriptionId": "7489affc-8bb3-4dc8-afdd-439352222274",
+			"resourceGroupName": "ecat88resourcegroup"
+		}
+	}
+}

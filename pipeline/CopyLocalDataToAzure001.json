@@ -36,20 +36,22 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "LastName",
-									"type": "String"
-								},
-								"sink": {
-									"name": "Last"
-								}
-							},
-							{
-								"source": {
 									"name": "FirstName",
 									"type": "String"
 								},
 								"sink": {
-									"name": "First"
+									"name": "First",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "LastName",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Last",
+									"type": "String"
 								}
 							},
 							{
@@ -77,7 +79,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "LocalDevSqlDboSales",
+						"referenceName": "LocalDevSqlDboCustomers",
 						"type": "DatasetReference"
 					}
 				],

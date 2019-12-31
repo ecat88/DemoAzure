@@ -28,7 +28,15 @@
 						"type": "SqlServerSource"
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureDataLakeStoreWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
 					},
 					"enableStaging": false,
 					"translator": {
@@ -83,7 +91,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_ijl",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				]

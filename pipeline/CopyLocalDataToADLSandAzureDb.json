@@ -1,5 +1,5 @@
 {
-	"name": "CopyLocalDataToADLS001",
+	"name": "CopyLocalDataToADLSandAzureDb",
 	"properties": {
 		"activities": [
 			{

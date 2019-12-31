@@ -1,5 +1,5 @@
 {
-	"name": "SalesDataCSV",
+	"name": "LakeSalesDataCSV",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStore001",

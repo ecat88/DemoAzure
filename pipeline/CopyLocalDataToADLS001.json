@@ -44,40 +44,42 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "LastName",
+									"name": "ID",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "ID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "CustomerID",
 									"type": "String"
 								},
 								"sink": {
-									"name": "Last"
+									"name": "CustomerID",
+									"type": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "FirstName",
+									"name": "DateOfSale",
+									"type": "DateTime"
+								},
+								"sink": {
+									"name": "DateOfSale",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ItemPurchased",
 									"type": "String"
 								},
 								"sink": {
-									"name": "First"
-								}
-							},
-							{
-								"source": {
-									"name": "BirthDay",
-									"type": "DateTime"
-								},
-								"sink": {
-									"name": "DOB",
-									"type": "DateTime"
-								}
-							},
-							{
-								"source": {
-									"name": "CreatedOn",
-									"type": "DateTime"
-								},
-								"sink": {
-									"name": "LastModified",
-									"type": "DateTime"
+									"name": "ItemPurchased",
+									"type": "String"
 								}
 							}
 						]

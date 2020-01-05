@@ -126,20 +126,15 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureDataLakeStoreReadSettings",
-							"recursive": true
+							"recursive": false,
+							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
-						"type": "SqlDWSink",
-						"allowPolyBase": true,
-						"polyBaseSettings": {
-							"rejectValue": 0,
-							"rejectType": "value",
-							"useTypeDefault": true
-						}
+						"type": "SqlDWSink"
 					},
 					"enableStaging": false,
 					"translator": {

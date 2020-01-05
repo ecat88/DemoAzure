@@ -1,0 +1,40 @@
+{
+	"name": "LakeExportTxt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStore001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": "export.txt",
+				"folderPath": "SalesData"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "CustomerID",
+				"type": "String"
+			},
+			{
+				"name": "DateOfSale",
+				"type": "String"
+			},
+			{
+				"name": "ItemPurchased",
+				"type": "String"
+			}
+		]
+	}
+}
